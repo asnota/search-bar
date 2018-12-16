@@ -9,5 +9,10 @@ const DB = {
     ]
 }
 
+export class DBRetriever {
+    static search(text){
+        return Promise.resolve(DB);
+    }
+}
 
 export default DB;
